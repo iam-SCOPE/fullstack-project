@@ -1,0 +1,288 @@
+html{
+    background-color: auto;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+/*===================================================================================================*/
+
+#first-section{
+    width: 100vw;
+    margin-left: -10px;
+    background-color: grey;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-section-sub{
+    width: 70%;
+}
+#first-section-sub-div1{
+    width: 700px;
+    margin-top: 200px;
+}
+#first-section-sub-div1 h1{
+    font-size: 40px;
+}
+#first-section-sub-div1 h2{
+    font-size: 25px;
+}
+#first-section-sub-div1 button{
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#first-section-sub-div2{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#first-section-sub-div2-div1 p{
+    margin-left: 50px;
+}
+#first-section-sub-div2-div1 a{
+    color: red;
+    text-decoration: none;
+}
+
+#first-section-sub-div2-div2{
+    padding-top: 10px;
+}
+#first-section-sub-div2-div2 a{
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+/*============================================================================================*/
+
+#second-section{
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-left: -10px;
+}
+#second-section-sub{
+    width: 70%;
+    display: flex;
+}
+
+.second-section-sub-div{
+    width: 50%;
+    padding-top: 50px;
+}
+
+/*====================================================================================================*/
+
+#third-section{
+    width: 100vw;
+    margin-left: -10px;
+    position: relative;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+#third-section-sub{
+    width: 70%;
+    display: flex;
+}
+
+.third-section-sub-div{
+    width: 50%;
+    text-align: center;
+    padding: 100px 5px;
+}
+
+/*============================================================================*/
+
+#fourth-section{
+    width: 100vw;
+    margin-left: -10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#fourth-section-sub{
+    width: 70%;
+    display: flex;
+}
+
+#fourth-section-sub-div-1{
+    width: 50%;
+}
+
+#fourth-section-sub-div-1 p{
+    line-height: 2;
+}
+
+#fourth-section-sub-div-1 button{
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#fourth-section-sub-div-2{
+    height: 100px;
+    margin-top: 485px;
+    width: 50%;
+    text-align: center;
+}
+
+/*================================================================================================*/
+
+#fifth-section{
+    width: 100vw;
+    margin-left: -10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#fifth-section-sub{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-section-sub-divs{
+    width: 30%;
+    border: 1px solid black;
+}
+
+.fifth-section-sub-divs-sub1{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 30px 0;
+}
+.fifth-section-sub-divs-anchors{
+    text-decoration: none;
+    color: white;
+}
+
+.fifth-section-sub-divs-sub1:hover{
+    background-color: darkred;
+    transition: 1s ease;
+}
+
+.fifth-section-sub-divs-sub2{
+    background-color: white;
+    padding: 20px 30px;
+    height: 250px;
+}
+.fifth-section-sub-divs-sub2 a{
+    color: red;
+    text-decoration: none;
+}
+.fifth-section-sub-divs-sub2 p{
+    margin-bottom: 70px;
+    color: grey;
+}
+
+/*============================================================================================*/
+
+#sixth-section{
+    position: relative;
+    display: none;
+}
+
+/*============================================================================================*/
+
+#seventh-section{
+    position: relative;
+    width: 100vw;
+    margin-left: -10px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#seventh-section-sub{
+    width: 70%;
+    display: flex;
+}
+#seventh-section-sub video{
+    width: 50%;
+    height: 300px;
+    border: 1px solid black;
+}
+#seventh-section-sub-div1{
+    width: 50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+#seventh-section-sub-div1 h1{
+    margin-top: 70px;
+}
+
+/*=========================================================================================*/
+
+#eight-section{
+    width: 100vw;
+    margin-left: -10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#eight-section-sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eight-section-sub-divs{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-image: url(https://cdn.filmhero.com/images/FH_Dark_Business_Roll_03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.eight-section-sub-divs h1{
+    margin-bottom: 0;
+}
+
+.eight-section-sub-paragraph{
+    font-size: 13px;
+    visibility: hidden;
+    margin-top: -25px;
+}
+.eight-section-sub-divs:hover .eight-section-sub-paragraph{
+    margin-top: 0;
+    visibility: visible;
+    transition:margin-top 0.5s ease;
+}
+.eight-section-sub-anchors{
+    text-decoration: none;
+    color: white;
+    width: 33.3%;
+}
+
+/*=======================================================================================*/

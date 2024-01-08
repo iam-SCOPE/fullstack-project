@@ -1,0 +1,139 @@
+.background{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section{
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2016/02/08/gradient-grey-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.first-section-inner{
+    width: 70%;
+}
+
+.first-section-inner-div1{
+    width: 600px;
+    color: white;
+    margin-bottom: 150px;
+}
+
+.first-section-inner-div2{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.first-paragraph{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.third-paragraph{
+    margin-left: 1080px;
+}
+
+/*========================================================*/
+
+.second-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.second-section-inner{
+    width: 70%;
+    display: flex;
+}
+
+.second-section-inner-div1{
+    width: 1000px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+/*============================================================*/
+
+.third-section{
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2016/02/08/gradient-grey-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.third-section-inner{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-section-inner-one{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.third-section-inner-1,
+.third-section-inner-2,
+.third-section-inner-3,
+.third-section-inner-4,
+.third-section-inner-5,
+.third-section-inner-6{
+    width: 32%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/*=================================================*/
+
+.fourth-section{
+    width: 100vw;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-section-inner{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-section-inner-div1{
+    width: 800px;
+}
+
+.fourth-section-img1{
+    width: 400px;
+}
+
+.fourth-section-inner-btn1{
+    width: 150px;
+    background-color: grey;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/*==============================================*/

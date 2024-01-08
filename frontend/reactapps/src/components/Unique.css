@@ -1,0 +1,45 @@
+#eight-section{
+    width: 100vw;
+    margin-left: -10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#eight-section-sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eight-section-sub-divs{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-image: url(https://cdn.filmhero.com/images/FH_Dark_Business_Roll_03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.eight-section-sub-divs h1{
+    margin-bottom: 0;
+}
+
+.eight-section-sub-paragraph{
+    font-size: 13px;
+    visibility: hidden;
+    margin-top: -25px;
+}
+.eight-section-sub-divs:hover .eight-section-sub-paragraph{
+    margin-top: 0;
+    visibility: visible;
+    transition:margin-top 0.5s ease;
+}
+.eight-section-sub-anchors{
+    text-decoration: none;
+    color: white;
+    width: 33.3%;
+}

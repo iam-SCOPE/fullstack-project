@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Page Not Found - Scope Technologies</title>
+        <link rel="icon" type="image/png" href="https://www.freepnglogos.com/uploads/s-letter-logo-png-19.png">
+
+        <style>
+            #section-one{
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                padding: 30px 0;
+                margin-left: -10px;
+                background-color: lightgray;
+            }
+            #section-one-div{
+                width: 520px;
+                font-size: 16px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            #section-one-div img{
+                width: 500px;
+            }
+            #section-one-div a{
+                text-decoration: none;
+            }
+
+            #firstsub-container{
+                background-color: lightgrey;
+                height: auto;
+                padding-bottom: 5px;
+                padding-top: 10px;
+                width: 100vw;
+                margin-top: -18px;
+                position: fixed;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                margin-left: -10px;
+                padding-top: 15px;
+                position: relative;
+                font-size: 13px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            #firstsub-paragraph{
+                color: black;
+                margin-top: 0;
+            }
+            
+            #dropdowncontainer{
+                display: none;
+            }
+            #firstsub-select{
+                background-color: grey;
+                padding: 5px;
+                margin-left: 70px;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+            
+            #firstsub-container a{
+                color: black;
+                margin-right: 10px;
+                text-decoration: none;
+            }
+            
+            #scope{
+                background-color: grey;
+                font-size: 16px;
+                padding: 10px;
+                border-radius: 10px;
+                margin-right: 10px;
+                border: 1px solid black;
+            }
+            #scope:hover{
+                cursor: pointer;
+                background-color: lightgrey;
+            }
+            
+            #logo{
+                width: 250px;
+                height: 100px;
+                margin-left: 40px;
+                margin-right: 140px;
+            }
+            
+            #home{
+                width: 20px;
+                margin: -5px;
+            }
+            
+            /*===========================================================================================================*/
+            
+            #sixth-container{
+                background-color: rgb(96, 91, 91);
+                width: 100vw;
+                height: auto;
+                position: relative;
+                margin-bottom: -10px;
+                display: flex;
+                justify-content: center;
+                padding-top: 70px;
+                padding-bottom: 50px;
+                margin-left: -10px;
+                font-size: 13px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            
+            #subsix{
+                display: flex;
+                flex-direction: column;
+            }
+            .subsix-anchor{
+                text-decoration: none;
+                color: black;
+            }
+            .subsix-h3{
+                font-size: 17px;
+            }
+            .subsix-ul{
+                margin: 0;
+                padding: 0;
+            }
+            .subsix-li{
+                margin-bottom: 15px;
+                color: grey;
+                font-size: 14px;
+                color: black;
+                list-style: none;
+            }
+            #subsubsix{
+                display: flex;
+                width: 100%;
+            }
+            #last1{
+                width: 25%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                color: black;
+            }
+            #last2{
+                width: 25%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                color: black;
+            }
+            #last3{
+                width: 25%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                color: black;
+            }
+            #last4{
+                width: 25%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                color: black;
+            }
+            
+            #googleapp{
+                display: flex;
+                width: 290px;
+                height: 50px;
+            }
+            #image1{
+                width: 200px;
+                margin-left: -30px;
+                margin-top: -13px;
+            }
+            #image2{
+                width: 150px;
+                height: 50px;
+                margin-left: -20px;
+            }
+            #socials{
+                display: flex;
+                width: 290px;
+                height: 50px;
+                overflow: hidden;
+                margin-top: 5px;
+            }
+            #facebook{
+                width: 40px;
+                margin-right: 10px;
+                height: 40px;
+                margin-top: 1px;
+            }
+            #twitter{
+                width: 45px;
+                margin-top: 5px;
+                margin-right: 10px;
+            
+            }
+            #instagram{
+                width: 40px;
+                margin-top: 2px;
+            }
+            
+            #floor{
+                color: black;
+                position: relative;
+            }
+            .floor-p{
+                font-size: 14px;
+            }
+            .floor-anchor{
+                color: black;
+                text-decoration: none;
+            }
+            #tech{
+                text-align: center;
+            }
+            #site{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            #site a{
+                margin: 0 10px;
+            }
+            
+            /*==========================================================================================*/
+            
+            @media (max-width: 1400px)
+            {
+                /*First Container*/
+                #logo{
+                    display: none;
+                }
+                #firstsub-select{
+                    margin-left: 0;
+                }
+                #paraspan{
+                    display: none;
+                }
+            
+                /*Sixth Container*/
+            
+                #subsubsix{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                #last1,#last2,#last3,#last4{
+                    width: 50%;
+                }
+                #last3,#last4{
+                    margin-top: 20px;
+                }
+                .floor-pp{
+                    display: none;
+                }
+                #site{
+                    position: initial;
+                    display: flex;
+                }
+                #floor{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            
+            /*====================================================================================*/
+            
+            @media (max-width: 815px)
+            {
+                /*First Container*/
+                #firstsub-container{
+                    background-color: black;
+                    justify-content: flex-start;
+                    padding-left: 20px;
+                }
+                
+                #firstsub-containersub{
+                    display: flex;
+                    align-items: center;
+                }
+                .mobile-hidden{
+                    display: none;
+                }
+                #firstsub-containersub select{
+                    height: 30px;
+                    margin-right: 30px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                }
+                
+                #logo{
+                    background-color: grey;
+                    display: flex;
+                    width: 200px;
+                    height: 50px;
+                    margin-left: 0;
+                }
+            
+                #dropdowncontainer{
+                    position: relative;
+                    display: block;
+                }
+                #dropdown-toogle{
+                    display: block;
+                }
+                #dropdown-toogle button{
+                    background-color: grey;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-top: 6px;
+                }
+                #dropdown-Button:hover{
+                    cursor: pointer;
+                }
+                #dropdownclose{
+                    cursor: pointer;
+                }
+            
+                #dropdown-menu{
+                    position: relative;
+                    display: none;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: -10px;
+                    width: 100vw;
+                    height: 100vh;
+                }
+                #dropdown-menu li{
+                    list-style: none;
+                }
+                #dropdown-menu a{
+                    color: white;
+                }
+                #dropdown-menu p{
+                    color: rgb(90, 38, 38);
+                }
+                #dropdown-menu p:hover{
+                    cursor: default;
+                }
+                #dropdown-toogle{
+                    display: flex;
+                    flex-direction: column;
+                }
+                #dropdown-toogle button{
+                    padding: 10px;
+                    border: 1px solid black;
+                    background-color: grey;
+                }
+                #dropdown-toogleclose{
+                    display: block;
+                }
+                #dropdown-toogleclose button{
+                    width: 100px;
+                    padding: 10px;
+                    background-color: grey;
+                    color: white;
+                    font-size: 16px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+                #dropdown-toogleclose button:hover{
+                    cursor: pointer;
+                }
+
+                /*Section one*/
+                #section-one-div{
+                    width: 90vw;
+                }
+                #section-one-div img{
+                    width: 100%;
+                }
+            
+                /*Sixth Container*/
+                #sixth-container{
+                    padding-bottom: 20px;
+                    padding-top: 0;
+                }
+                #subsubsix{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                #last3,#last4{
+                    width: 100%;
+                    align-items: center;
+                }
+                #last1,#last2{
+                    align-items: center;
+                }
+            }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded',
+            function (){
+    
+                const dropdownToogle = document.querySelector('#dropdown-toogle');
+                const dropdownMenu = document.querySelector('#dropdown-menu');
+                const dropdownToogleClose = document.querySelector('#dropdown-toogleclose')
+
+                let clickCounter = 0;
+
+                dropdownToogle.addEventListener("click", e => {
+                    e.preventDefault();
+
+                    clickCounter++;
+
+                    if(clickCounter % 2 === 1)
+                    {
+                        dropdownMenu.style.display = 'flex';
+                        dropdownToogle.style.display = 'none';
+
+                    }
+                    else
+                    {
+                        dropdownMenu.style.display = 'none'
+                    }
+
+                });
+
+                dropdownToogleClose.addEventListener("click", e => {
+                    e.preventDefault();
+
+                    if(clickCounter % 2 === 1)
+                    {
+                        dropdownMenu.style.display = 'none';
+                        dropdownToogle.style.display = 'flex';
+
+                    }
+                    clickCounter++;
+                });
+    
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <nav id="firstsub-container">
+
+            <div id="dropdowncontainer">
+                <a href="#dropdown-menu" id="dropdown-toogle"><button id="dropdown-Button">Menu</button></a>
+                <ul id="dropdown-menu">
+                    <a href="" id="dropdown-toogleclose"><button id="dropdownclose">Close</button></a>
+                    <p>_________________________</p>
+                    <li><a href="">GROUP</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">CAREER</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">FOUNDATION</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">BRANCH LOCATOR</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">OPEN AN ACCOUNT</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">LOG IN</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">SCOPE TECHNOLOGIES</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">PERSONAL</a></li>
+                    <p>_________________________</p>
+                    <li><a href="">SME</a></li>
+                    <p>_________________________</p>
+                    <li><a href="/corporate">CORPORATE</a></li>
+                    <p>_________________________</p>
+                    <li><a href="/about">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <div id="firstsub-containersub">
+                <a class="mobile-hidden" href="" >GROUP</a>
+                <a class="mobile-hidden" href="" >CAREER</a>
+                <a class="mobile-hidden" href="" >FOUNDATION</a>
+                <a class="mobile-hidden" href="" >BRANCH LOCATOR</a>
+                <a class="mobile-hidden" href="" >OPEN AN ACCOUNT</a>
+                <a class="mobile-hidden" href="">LOG IN</a>
+                <select name="" id="firstsub-select">
+                    <option value="">Select Language</option>
+                    <option value="">English</option>
+                    <option value="">Chinese</option>
+                    <option value="">Portugese</option>
+                    <option value="">French</option>
+                    <option value="">Spanish</option>
+                </select>
+                <p class="mobile-hidden" id="firstsub-paragraph">__________________________________________________________________________________________________<span id="paraspan">________________________________</span></p>
+                <button class="mobile-hidden" id="scope">SCOPE TECHNOLOGIES</button>
+                <a class="mobile-hidden" href="/"> <img id="home" src="https://cdn.onlinewebfonts.com/svg/img_301389.png" alt="home icon"></a>
+                <a class="mobile-hidden" href="" >PERSONAL</a>
+                <a class="mobile-hidden" href="" >SME</a>
+                <a class="mobile-hidden" href="/corporate" >CORPORATE</a>
+                <a class="mobile-hidden" href="" >MEDIA</a>
+                <a class="mobile-hidden" href="/about" >ABOUT US</a>
+                <a class="mobile-hidden" href="" >HELP</a>
+            </div>
+            <div>
+                <img id="logo" src='https://madisonwomenshealth.com/wp-content/uploads/2014/12/SCOPE-Certified-logo-1.png' alt="Scope website logo">
+            </div>
+        </nav>
+
+        <section id="section-one">
+            <div id="section-one-div">
+                <img src="https://thumbs.dreamstime.com/b/error-page-not-found-vector-eps-48580567.jpg" alt=" image for page not found">                
+                <h3>WE'RE SORRY THIS PAGE HAD A HARD LANDING </h3>
+                <p>404 Error. It could be an outdated link. Try the URL again, or find what you're looking for on our <a href="/">Homepage</a>.</p>
+            </div>
+        </section>
+
+        <section id="sixth-container">
+            <footer id="subsix">
+                <div id="subsubsix">
+                    <div id="last1">
+                        <h3 class="subsix-h3">Helpful Information</h3>
+                        <ul class="subsix-ul">
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Account Information</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Trade & Treasury</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Contact us</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">CEO's Overview</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Reports</li></a>
+
+                        </ul>
+                    </div>
+                    <div id="last2">
+                        <h3 class="subsix-h3">Partner With Us</h3>
+                        <ul class="subsix-ul"></ul>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Personal</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Business</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Strategic Advisory</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Digital Solutions</li></a>
+                        </ul>
+                    </div>
+                    <div id="last3">
+                        <h3 class="subsix-h3">About Scope Technologies</h3>
+                        <ul class="subsix-ul"></ul>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Business Focus</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Scope Technologies History</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Board of Directors</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Achievements</li></a>
+                            <a class="subsix-anchor" href=""><li class="subsix-li">Strenght and Ratings</li></a>
+                        </ul>
+                    </div>
+                    <div id="last4">
+                        <h3 class="subsix-h3">Connect</h3>
+                        <div id="googleapp">
+                            <a href=""><img src="https://i0.wp.com/www.bagel-labs.com/wp-content/uploads/2016/12/App-Store-Button_resize.png?ssl=1" alt="app store icon" id="image1"></a>
+                            <a href=""><img src="https://cdn.afterdawn.fi/v3/news/original/get-it-on-google-play.png" alt="google play store icon" id="image2"></a>
+                        </div>
+                        <div id="socials">
+                            <a href=""><img src="https://www.pinclipart.com/picdir/big/364-3648099_facebook-clipart-black-and-white.png" alt="facebook logo" id="facebook"></a>
+                            <a href=""><img src="https://www.freepnglogos.com/elon-musk-twitter-rebrand-x-logo-2.png" alt="X logo" id="twitter"></a>
+                            <a href=""><img src="https://www.nicepng.com/png/full/1-14885_instagram-logo-transparent-instagram-logo-vector.png" alt="instagram logo" id="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="floor">
+                    <p class="floor-p floor-pp">_______________________________________________________________________________________________________________________________________________________________________</p>
+                    <p class="floor-p" id="tech"><strong>Scope Technologies</strong> is Licensed and regulated by the Bla Bla Bla Bla</p>
+                    <p class="floor-p floor-pp">_______________________________________________________________________________________________________________________________________________________________________</p>
+                    <p class="floor-p"><strong>©Scope Technologies.</strong> All Right Reserved.</p>
+                    <div id="site">
+                    <a class="floor-anchor" href="">Site Map </a>
+                    <a class="floor-anchor" href="">Terms & Conditions </a>
+                    <a class="floor-anchor" href="">Privacy policy</a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    
+    </body>
+    
+</html>

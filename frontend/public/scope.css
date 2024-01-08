@@ -1,0 +1,1208 @@
+html{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background-image: url(https://www.singleblackmale.org/wp-content/uploads/2013/07/young_black_man.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+/*================================================================================================================*/
+
+#first-container{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-ppt-dark-technology-style-background-backgroundppt-template-backgroundtechnological-image_58969.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-top:-10px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#firstsub-container{
+    background-color: lightgrey;
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 100vw;
+    margin-top: -18px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+#firstsub-paragraph{
+    color: black;
+    margin-top: 0;
+}
+
+#dropdowncontainer{
+    display: none;
+}
+#firstsub-select{
+    background-color: grey;
+    padding: 5px;
+    margin-left: 70px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#firstsub-container a{
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#scope{
+    background-color: grey;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+#scope:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+#logo{
+    width: 250px;
+    height: 100px;
+    margin-left: 40px;
+    margin-right: 140px;
+}
+
+#home{
+    width: 20px;
+    margin: -5px;
+}
+
+#secondsub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: auto;
+    margin-top: 200px;
+}
+
+#firstbig-container{
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+    padding-bottom: 50px;
+}
+#empower{
+    font-size: 60px;
+}
+#get{
+    font-size: 25px;
+}
+#learn{
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#learn:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+#firstsmall-container{
+    background-image: url(https://cdn.wallpapersafari.com/32/70/vA4XuL.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+#account{
+    font-size: 26px;
+    margin-left: 125px;
+}
+.firstsmall-containerbutton{
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    margin-bottom: 40px;
+}
+.firstsmall-containerbutton:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+.firstsmall-containeranchor{
+    text-decoration: none;
+}
+.unordered{
+    margin-left: 65px;
+}
+.firstsmall-containerlist{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+.firstsmall-containerlist:hover{
+    padding-left: 3px;
+}
+
+#personal{
+    margin-left: 85px;
+}
+
+#firstsmall-container2{
+    background-image: url(https://cdn.wallpapersafari.com/32/70/vA4XuL.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.logandsign{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 10px 100px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logandsign:hover{
+    background-color: darkred;
+}
+
+#firstsmall-container3{
+    background-image: url(https://cdn.wallpapersafari.com/32/70/vA4XuL.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+#forgot-login-password{
+    /*margin-left: 180px;*/
+    cursor: pointer;
+}
+#remember-password{
+    margin-top: -2.5px;
+}
+
+#login-input-div{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login-submit{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#login-submit:hover{
+    background-color: gray;
+}
+
+/*=================================================================================================================*/
+
+#second-container{
+    background-image: url(https://s3.envato.com/files/235948944/White%20Hexagons%20Tech%20Background%2001_preview1.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+}
+
+#subsecond-container{
+    width: 70%;
+    display: flex;
+}
+.subsecond-containeranchor{
+    color: black;
+    text-decoration: none;
+}
+#one{
+    width: 25%;
+    height: auto;
+    color: black;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+#two{
+    width: 25%;
+    height: 150px;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#subtwo{
+    margin-top: 5px;
+}
+
+#two:hover{
+    #subtwo-img{
+        width: 70px;
+        transition: width 0.3s ease;
+    }
+}
+#three{
+    width: 25%;
+    height: 150px;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#subthree{
+    margin-top: 5px;
+}
+#three:hover{
+    #subthree-img{
+        width: 70px;
+        transition: width 0.3s ease;
+    }
+}
+#four{
+    width: 25%;
+    height: 150px;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#subfour{
+    margin-top: 5px;
+}
+#four:hover{
+    #subfour-img{
+        width: 70px;
+        transition: width 0.3s ease;
+    }
+}
+#subtwo-img,
+#subthree-img,
+#subfour-img{
+    width: 60px;
+}
+
+/*=================================================================================================================*/
+
+#third-container{
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/PDaTSuJ/videoblocks-plexus-white-abstract-network-technology-business-science-background-loop_bv-9ohwt4_thumbnail-1080_01.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+#first-thirdsub{
+    display: flex;
+    margin-bottom: 20px;
+}
+#second-thirdsub{
+    display: flex;
+}
+.first-thirdsub-anchor{
+    text-decoration: none;
+    color: white;
+}
+.first-thirdsub-h1{
+    margin-top: 0;
+    padding-top: 170px;
+}
+
+#first{
+    background-image: url(https://wallpaperaccess.com/full/4441211.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 830px;
+    height: 350px;
+    padding-left: 30px;
+    margin-right: 10px;
+}
+
+#first:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+}
+
+#second{
+    background-color: black;
+    width: 480px;
+    height: 350px;
+    margin-left: 10px;
+}
+.first-thirdsub-second-inner{
+    margin-left: 30px;
+}
+.first-thirdsub-second-button{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.first-thirdsub-second-button:hover{
+    cursor: pointer;
+}
+.first-thirdsub-second-h1{
+    margin-top: 100px;
+}
+
+#third{
+    background-image: url(https://wallpaperaccess.com/full/2886129.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 427px;
+    height: 300px;
+    padding-left: 30px;
+}
+#third:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+}
+#fourth{
+    background-image: url(https://wallpaperaccess.com/full/2454628.png);
+    background-size: cover;
+    background-position: center;
+    width: 427px;
+    height: 300px;
+    padding-left: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#fourth:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+}
+#fifth{
+    background-color: black;
+    width: 427px;
+    height: auto;
+    padding-bottom: 10px;
+}
+#form{
+    padding-top: 5px;
+    padding-left: 40px;
+    a{
+        color: white;
+    }
+}
+#inputone{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#inputtwo, #inputthree{
+    width: 169px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#select{
+    width: 355px;
+    height: 35px;
+    border-radius: 10px;
+}
+#inputfive{
+    width: 355px;
+    height: 30px;
+    font-size: 16px;
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+#inputfive:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*==============================================================================================================*/
+
+#fourth-container{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-left: -10px;
+    padding-bottom: 100px;
+}
+#subfourth{
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-left: 280px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.subfourth-button{
+    background-color: gray;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.subfourth-button:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+/*===================================================================================================*/
+
+#fifth-container{
+    background-color: white;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: -10px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#fifth-p{
+    color: rgb(202, 194, 194);
+    
+}
+
+#fifthsolution{
+    margin-left: 260px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#anch{
+    margin-left: 200px;
+}
+
+.anch{
+    font-size: 16px;
+    margin-right: 30px;
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+.anch:hover{
+    color: red;
+    
+}
+.fifthcontsubimg{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#fifth-one{
+    display: flex;
+    margin-top: 40px;
+}
+.fifthsub-h3{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.fifthsub-p{
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.fifthsub-button{
+    background-color: grey;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 150px;
+    border: 1px solid grey;
+    color: white;
+}
+.fifthsub-button:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+#fifth-onesub{
+    width: 700px;
+    margin-left: 30px;
+}
+
+#fifth-two{
+    display: none;
+    margin-top: 40px;
+}
+#fifth-twosub{
+    width: 700px;
+    margin-left: 30px;
+}
+
+#fifth-three{
+    display: none;
+    margin-top: 40px;
+}
+#fifth-threesub{
+    width: 700px;
+    margin-left: 30px;
+}
+
+#fifth-four{
+    display: none;
+    margin-top: 40px;
+}
+#fifth-foursub{
+    width: 700px;
+    margin-left: 30px;
+}
+
+/*==============================================================================================================*/
+
+#sixth-container{
+    background-color: rgb(96, 91, 91);
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-left: -10px;
+}
+#subsix{
+    display: flex;
+    flex-direction: column;
+}
+.subsix-anchor{
+    text-decoration: none;
+    color: black;
+}
+.subsix-h3{
+    font-size: 17px;
+}
+.subsix-ul{
+    margin: 0;
+    padding: 0;
+}
+.subsix-li{
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 14px;
+    color: black;
+    list-style: none;
+}
+#subsubsix{
+    display: flex;
+    width: 100%;
+}
+#last1{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+#last2{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+#last3{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+#last4{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#googleapp{
+    display: flex;
+    width: 290px;
+    height: 50px;
+}
+#image1{
+    width: 200px;
+    margin-left: -30px;
+    margin-top: -13px;
+}
+#image2{
+    width: 150px;
+    height: 50px;
+    margin-left: -20px;
+}
+#socials{
+    display: flex;
+    width: 290px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+#facebook{
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
+    margin-top: 1px;
+}
+#twitter{
+    width: 45px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+#instagram{
+    width: 40px;
+    margin-top: 2px;
+}
+
+#floor{
+    color: black;
+    position: relative;
+}
+.floor-p{
+    font-size: 14px;
+}
+.floor-anchor{
+    color: black;
+    text-decoration: none;
+}
+#tech{
+    text-align: center;
+}
+#site{
+    width: 100%;
+    display: flex;
+    left: 1035px;
+    bottom: 15px;
+    justify-content: center;
+}
+#site a{
+    margin: 0 10px;
+}
+
+/*===============================================*/
+
+@media (max-width: 1400px)
+{
+    /*First Container*/
+    #logo{
+        display: none;
+    }
+    #firstsub-select{
+        margin-left: 0;
+    }
+    #secondsub-container{
+        flex-direction: column;
+    }
+    #firstsmall-container{
+        margin-top: 30px;
+    }
+    #paraspan{
+        display: none;
+    }
+
+    /*Second Container*/
+
+    /*Third Container*/
+    #first-thirdsub{
+        display: block;
+    }
+    #second-thirdsub{
+        display: block;
+    }
+    #third,#fourth{
+        width: 830px;
+    }
+    #second,#third,#fourth{
+        margin-bottom: 20px;
+    }
+
+    #second{
+        width: 860px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: -80px;
+    }
+    #fourth{
+        margin-left: 0;
+    }
+    #fifth{
+        width: 860px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Fourth Container*/
+    #fourth-container{
+        display: flex;
+        justify-content: center;
+    }
+    #subfourth{
+        margin-left: 0;
+    }
+
+    /*Fifth Container*/
+    .fifthcontsub{
+        flex-direction: column;
+        align-items: center;
+    }
+    #fifthsolution{
+        margin-left: 380px;
+    }
+    #anch{
+        margin-left: 320px;
+    }
+
+    /*Sixth Container*/
+
+    #subsubsix{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #last1,#last2,#last3,#last4{
+        width: 50%;
+    }
+    #last3,#last4{
+        margin-top: 20px;
+    }
+    .floor-pp{
+        display: none;
+    }
+    #site{
+        position: initial;
+        display: flex;
+    }
+    #floor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*=====================================*/
+
+@media (max-width: 940px)
+{
+    #secondsub-container{
+        display: block;
+        margin-left: -180px;
+    }
+}
+
+/*=======================================*/
+
+@media (max-width: 815px)
+{
+    /*First Container*/
+    #firstsub-container{
+        background-color: black;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    
+    #firstsub-containersub{
+        display: flex;
+        align-items: center;
+    }
+    .mobile-hidden{
+        display: none;
+    }
+    #firstsub-containersub select{
+        height: 30px;
+        margin-right: 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    #logo{
+        background-color: grey;
+        display: flex;
+        width: 200px;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    #dropdowncontainer{
+        position: relative;
+        display: block;
+    }
+    #dropdown-toogle{
+        display: block;
+    }
+    #dropdown-toogle button{
+        background-color: grey;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 6px;
+    }
+    #dropdown-Button:hover{
+        cursor: pointer;
+    }
+    #dropdownclose{
+        cursor: pointer;
+    }
+
+    #dropdown-menu{
+        position: relative;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -10px;
+        width: 100vw;
+        height: 100vh;
+    }
+    #dropdown-menu li{
+        list-style: none;
+    }
+    #dropdown-menu a{
+        color: white;
+    }
+    #dropdown-menu p{
+        color: rgb(90, 38, 38);
+    }
+    #dropdown-menu p:hover{
+        cursor: default;
+    }
+    #dropdown-toogle{
+        display: flex;
+        flex-direction: column;
+    }
+    #dropdown-toogle button{
+        padding: 10px;
+        border: 1px solid black;
+        background-color: grey;
+    }
+    #dropdown-toogleclose{
+        display: block;
+    }
+    #dropdown-toogleclose button{
+        width: 100px;
+        padding: 10px;
+        background-color: grey;
+        color: white;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    #dropdown-toogleclose button:hover{
+        cursor: pointer;
+    }
+
+    #first-container{
+        padding-bottom: 20px;
+    }
+
+    #secondsub-container{
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px;
+        margin-left: 0;
+    }
+    #firstbig-container{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    #empower{
+        font-size: 30px;
+    }
+    #get{
+        font-size: 15px;
+    }
+    #learn{
+        padding: 5px;
+    }
+
+    #firstsmall-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    #firstsmall-container button{
+        width: 150px;
+        margin: 5px;
+        
+    }
+    #firstsmall-container ul{
+        margin: 0;
+        padding-top: 10px;
+    }
+    #firstsmall-container h2{
+        margin: 0;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /*Second Container*/
+    #subsecond-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+    }
+    #one,#three{
+        width: 100%;
+    }
+    #two,#four{
+        width: 50%;
+    }
+    #one{
+        padding-left: 20px;
+        order: 0;
+    }
+    #two{
+        order: 1;
+    }
+    #three{
+        order: 3;
+    }
+    #four{
+        order: 2;
+    }
+
+    /*Third Container*/
+    #third-container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #thirdsub{
+        width: 95%;
+    }
+    #first,#second,#third,#fourth,#fifth{
+        width: 100%;
+    }
+
+    #first{
+        padding: 0;
+    }
+    #first h1{
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #first h3{
+        margin-left: 20px;
+    }
+    #first p{
+        display: none;
+    }
+    #second{
+        background-color: black;
+    }
+    #second h1{
+        padding-top: 100px;
+    }
+    #third,#fourth{
+        padding: 0;
+    }
+    
+    .second-thirdsub-third-inner-element{
+        margin-left: 20px;
+    }
+    .second-thirdsub-fourth-inner-element{
+        margin-left: 20px;
+    }
+
+    #fifth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #inputone{
+        width: 300px;
+    }
+    #inputtwo,#inputthree{
+        width: 145px;
+    }
+    #select{
+        width: 310px;
+    }
+    #inputfive{
+        width: 310px;
+    }
+    #form{
+        padding: 0;
+    }
+
+    /*Fourth Container*/
+    #fourth-container{
+        padding-bottom: 40px;
+    }
+    #subfourth{
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 80%;
+    }
+
+    /*Fifth Container*/
+    #fifthsub{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fifth-one,
+    #fifth-two,
+    #fifth-three,
+    #fifth-four{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .fifthcontsubimg{
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .anch{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0;
+        margin-top: 5px;
+        padding-left: 5px;
+        border: 1px solid black;
+        color: black;
+    }
+    .anch:hover{
+        color: black;
+    }
+    #anch{
+        margin: 0;
+        margin-top: 20px;
+    }
+    #fifth-p{
+        display: none;
+    }
+    #fifthsolution{
+        font-size: 22px;
+        margin: 0;
+    }
+
+    #fifth-onesub,
+    #fifth-twosub,
+    #fifth-threesub,
+    #fifth-foursub{
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    /*Sixth Container*/
+    #sixth-container{
+        padding-bottom: 20px;
+        padding-top: 0;
+    }
+    #subsubsix{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #last3,#last4{
+        width: 100%;
+        align-items: center;
+    }
+    #last1,#last2{
+        align-items: center;
+    }
+    
+}
