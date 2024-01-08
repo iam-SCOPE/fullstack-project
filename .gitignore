@@ -1,0 +1,8 @@
+backend/build/
+backend/node_modules/
+frontend/node_modules/
+frontend/package-lock.json
+frontend/reactapps/.gitignore
+frontend/reactapps/README.md
+frontend/reactapps/package-lock.json
+frontend/reactapps/package.json
