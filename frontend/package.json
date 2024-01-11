@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "socket.io": "^4.7.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
