@@ -19,7 +19,7 @@ app.use(express.static('/Projects/Software Engineering/fullstack project/fronten
 
 //Home page
 app.get(['/','/home'], (req, res) => {
-    res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/scope.html'))
+    res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/index.html'))
     console.log('User is on Homepage')
 })
 
