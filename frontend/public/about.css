@@ -1,16 +1,17 @@
-html{
+body{
     background-color: auto;
     font-size: 16px;
     font-family: sans-serif;
     font-weight: bold;
     color: black;
+    padding: 0;
+    margin: 0;
 }
 
 /*===================================================================================================*/
 
 #first-section{
     width: 100vw;
-    margin-left: -10px;
     background-color: grey;
     position: relative;
     display: flex;
@@ -74,7 +75,6 @@ html{
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-    margin-left: -10px;
 }
 #second-section-sub{
     width: 70%;
@@ -90,7 +90,6 @@ html{
 
 #third-section{
     width: 100vw;
-    margin-left: -10px;
     position: relative;
     background-color: grey;
     display: flex;
@@ -112,7 +111,6 @@ html{
 
 #fourth-section{
     width: 100vw;
-    margin-left: -10px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -150,7 +148,6 @@ html{
 
 #fifth-section{
     width: 100vw;
-    margin-left: -10px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -212,7 +209,6 @@ html{
 #seventh-section{
     position: relative;
     width: 100vw;
-    margin-left: -10px;
     background-color: grey;
     display: flex;
     justify-content: center;
@@ -241,7 +237,6 @@ html{
 
 #eight-section{
     width: 100vw;
-    margin-left: -10px;
     position: relative;
     display: flex;
     justify-content: center;

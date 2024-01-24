@@ -29,12 +29,11 @@ res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack 
 console.log('User is on the About page')
 })
 
-app.use(express.static(path.join(__dirname, 'build')))
 //Corporate page
 app.get('/corporate', (req, res) => {
-    res.status(200).sendFile(path.resolve('./build/index.html'))
+    res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/corporate.html'))
     console.log('User is on the Corporate page')
-})
+    })
 
 //Notfound page
 app.all('*', (req, res) => {
