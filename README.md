@@ -1,1 +1,1 @@
-A fullstack web application project built using HTML, CSS, Javascript, React, and Express.js.
+A fullstack web application project built using HTML, CSS, Javascript, and Express.js.
