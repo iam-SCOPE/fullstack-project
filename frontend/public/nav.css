@@ -54,11 +54,14 @@ body{
     background-color: lightgrey;
 }
 
-#logo{
+.logo-container{
     width: 250px;
     height: 100px;
     margin-left: 40px;
-    margin-right: 140px;
+    background-image: url('https://webst-images.s3.eu-north-1.amazonaws.com/Rectangle-scopeImg.jpg');
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
 }
 
 #home{
@@ -66,7 +69,6 @@ body{
     margin: -5px;
 }
 
-/*===========================================================================================================*/
 
 
 /*==========================================================================================*/
@@ -74,7 +76,7 @@ body{
 @media (max-width: 1400px)
 {
     /*First Container*/
-    #logo{
+    .logo-container{
         display: none;
     }
     #firstsub-select{
@@ -94,6 +96,7 @@ body{
         background-color: black;
         justify-content: flex-start;
         padding-left: 20px;
+        align-items: center;
     }
     
     #firstsub-containersub{
@@ -105,17 +108,17 @@ body{
     }
     #firstsub-containersub select{
         height: 30px;
-        margin-right: 30px;
         border: 1px solid black;
         border-radius: 5px;
     }
-    
-    #logo{
-        background-color: grey;
-        display: flex;
-        width: 200px;
+
+    .logo-container{
+        display: block;
+        width: 150px;
         height: 50px;
-        margin-left: 0;
+        position: fixed;
+        right: 10px;
+        margin: 0;
     }
 
     #dropdowncontainer{
@@ -124,6 +127,7 @@ body{
     }
     #dropdown-toogle{
         display: block;
+        margin-left: -10px;
     }
     #dropdown-toogle button{
         background-color: grey;

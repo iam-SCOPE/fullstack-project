@@ -14,30 +14,30 @@ const logger = (req, res, next) => {
 }
 
 app.use(logger)
-app.use(express.static('/Projects/Software Engineering/fullstack project/frontend'))
+app.use(express.static('../frontend'))
 
 
 //Home page
 app.get(['/','/home'], (req, res) => {
-    res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/index.html'))
+    res.status(200).sendFile(path.resolve('../frontend/index.html'))
     console.log('User is on Homepage')
 })
 
 //About page
 app.get(['/about','/about-us'], (req, res) => {
-res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/about.html'))
+res.status(200).sendFile(path.resolve('../frontend/about.html'))
 console.log('User is on the About page')
 })
 
 //Corporate page
 app.get('/corporate', (req, res) => {
-    res.status(200).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/corporate.html'))
+    res.status(200).sendFile(path.resolve('../frontend/corporate.html'))
     console.log('User is on the Corporate page')
     })
 
 //Notfound page
 app.all('*', (req, res) => {
-    res.status(404).sendFile(path.resolve('/Projects/Software Engineering/fullstack project/frontend/notfound.html'))
+    res.status(404).sendFile(path.resolve('../frontend/notfound.html'))
     console.log('User is trying to access an invalid resource')
 })
 
