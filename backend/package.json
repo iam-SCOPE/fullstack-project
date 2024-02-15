@@ -9,7 +9,8 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "node backend.js"
+    "start": "node server.js",
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "SCOPE",
