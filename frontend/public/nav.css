@@ -55,8 +55,8 @@ body{
 }
 
 .logo-container{
-    width: 250px;
-    height: 100px;
+    width: 180px;
+    height: 70px;
     margin-left: 40px;
     background-image: url('https://webst-images.s3.eu-north-1.amazonaws.com/Rectangle-scopeImg.jpg');
     background-position: center;
