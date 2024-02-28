@@ -231,6 +231,7 @@ body{
     width: 50%;
     height: 300px;
     border: 1px solid black;
+    object-fit: cover;
 }
 #seventh-section-sub-div1{
     width: 50%;

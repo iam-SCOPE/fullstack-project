@@ -4,6 +4,7 @@ function (){
     const dropdownToogle = document.querySelector('#dropdown-toogle');
     const dropdownMenu = document.querySelector('#dropdown-menu');
     const dropdownToogleClose = document.querySelector('#dropdown-toogleclose')
+    const logoContainer = document.querySelector('.logo-container')
 
     let clickCounter = 0;
 
@@ -16,6 +17,7 @@ function (){
         {
             dropdownMenu.style.display = 'flex';
             dropdownToogle.style.display = 'none';
+            logoContainer.style.display = 'none';
 
         }
         else
@@ -32,7 +34,7 @@ function (){
         {
             dropdownMenu.style.display = 'none';
             dropdownToogle.style.display = 'flex';
-
+            logoContainer.style.display = 'flex';
         }
         clickCounter++;
     });

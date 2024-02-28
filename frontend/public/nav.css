@@ -95,7 +95,7 @@ body{
     #firstsub-container{
         background-color: black;
         justify-content: flex-start;
-        padding-left: 20px;
+        padding-left: 10px;
         align-items: center;
     }
     
@@ -127,19 +127,14 @@ body{
     }
     #dropdown-toogle{
         display: block;
-        margin-left: -10px;
     }
     #dropdown-toogle button{
         background-color: grey;
         padding: 5px;
         border-radius: 5px;
         margin-top: 6px;
-    }
-    #dropdown-Button:hover{
-        cursor: pointer;
-    }
-    #dropdownclose{
-        cursor: pointer;
+        padding: 10px;
+        border: 1px solid black;
     }
 
     #dropdown-menu{
@@ -147,7 +142,6 @@ body{
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: -10px;
         width: 100vw;
         height: 100vh;
     }
@@ -160,18 +154,7 @@ body{
     #dropdown-menu p{
         color: rgb(90, 38, 38);
     }
-    #dropdown-menu p:hover{
-        cursor: default;
-    }
-    #dropdown-toogle{
-        display: flex;
-        flex-direction: column;
-    }
-    #dropdown-toogle button{
-        padding: 10px;
-        border: 1px solid black;
-        background-color: grey;
-    }
+
     #dropdown-toogleclose{
         display: block;
     }
@@ -183,8 +166,5 @@ body{
         font-size: 16px;
         border: 1px solid black;
         border-radius: 10px;
-    }
-    #dropdown-toogleclose button:hover{
-        cursor: pointer;
     }
 }
