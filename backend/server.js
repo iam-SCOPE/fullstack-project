@@ -23,6 +23,18 @@ app.get(['/','/home'], (req, res) => {
     console.log('User is on Homepage')
 })
 
+//Signup page
+app.get(['/signup', '/sign-up'], (req, res) => {
+    res.status(200).sendFile(path.resolve('../frontend/signup.html'))
+    console.log('User is on Signup page')
+})
+
+//Login page
+app.get(['/login', '/log-in'], (req, res) => {
+    res.status(200).sendFile(path.resolve('../frontend/login.html'))
+    console.log('User is on Login page')
+})
+
 //About page
 app.get(['/about','/about-us'], (req, res) => {
 res.status(200).sendFile(path.resolve('../frontend/about.html'))
