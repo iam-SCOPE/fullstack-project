@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.first-section,
+.second-section,
+.third-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/*======================================================*/
+
+.first-section{
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Light-Blue-Wallpaper-Backgrounds-For-Desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.first-section-inner{
+    width: 70%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.first-section-content{
+    width: 500px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+/*======================================================*/
+
+.second-section-inner{
+    width: 70%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.second-section-inner > h2{
+    width: 40%;
+    margin-right: 30px;
+}
+
+.second-section-inner > h4{
+    width: 60%;
+}
+
+/*======================================================*/
+
+.third-section{
+    background-color: rgb(209, 199, 199);
+}
+
+.third-section-inner{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.third-section-content{
+    width: 60%;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.third-section-inner > img{
+    width: 40%;
+    height: 300px;
+}
+
+/*======================================================*/
+
+@media (max-width: 1100px)
+{
+    .first-section-inner,
+    .second-section-inner,
+    .third-section-inner,
+    .fourth-section-inner,
+    .fifth-section-inner{
+        width: 95%;
+    }
+}
+
+/*======================================================*/
+
+@media (max-width: 815px)
+{
+    .first-section-inner{
+        align-items: center;
+    }
+    .first-section-content{
+        width: 90%;
+    }
+
+    .second-section-inner{
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        height: auto;
+    }
+    .second-section-inner > h2{
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 90%;
+    }
+    .second-section-inner > h4{
+        width: 90%;
+    }
+
+    .third-section-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .third-section-content{
+        width: 90%;
+        padding-right: 0;
+    }
+    .third-section-inner > img{
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}

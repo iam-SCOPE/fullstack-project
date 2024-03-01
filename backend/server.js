@@ -37,15 +37,27 @@ app.get(['/login', '/log-in'], (req, res) => {
 
 //About page
 app.get(['/about','/about-us'], (req, res) => {
-res.status(200).sendFile(path.resolve('../frontend/about.html'))
-console.log('User is on the About page')
+    res.status(200).sendFile(path.resolve('../frontend/about.html'))
+    console.log('User is on the About page')
+})
+
+//Personal page
+app.get('/personal', (req, res) => {
+    res.status(200).sendFile(path.resolve('../frontend/personal.html'))
+    console.log('User is on the Personal page')
 })
 
 //Corporate page
 app.get('/corporate', (req, res) => {
     res.status(200).sendFile(path.resolve('../frontend/corporate.html'))
     console.log('User is on the Corporate page')
-    })
+})
+
+//Help page
+app.get('/help', (req, res) => {
+    res.status(200).sendFile(path.resolve('../frontend/help.html'))
+    console.log('User is on the help page')
+})
 
 //Notfound page
 app.all('*', (req, res) => {
@@ -57,4 +69,5 @@ app.all('*', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server Listening on port ${port}`)
+    console.log(`Access Webapp on localhost:${port} `)
 })
