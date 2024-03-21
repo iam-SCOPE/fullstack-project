@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 5700;
+const port = 5700;
 
 const logger = (req, res, next) => {
     const today = new Date(); 

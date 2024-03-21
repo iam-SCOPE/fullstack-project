@@ -1,42 +1,24 @@
 document.addEventListener('DOMContentLoaded',
 function (){
     
-    const dropdownToogle = document.querySelector('#dropdown-toogle');
-    const dropdownMenu = document.querySelector('#dropdown-menu');
-    const dropdownToogleClose = document.querySelector('#dropdown-toogleclose')
+    const dropdownToogle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownToogleClose = document.querySelector('.dropdown-toggleclose')
     const logoContainer = document.querySelector('.logo-container')
 
-    let clickCounter = 0;
 
-    dropdownToogle.addEventListener("click", e => {
-        e.preventDefault();
+    dropdownToogle.addEventListener("click", () => {
 
-        clickCounter++;
-
-        if(clickCounter % 2 === 1)
-        {
-            dropdownMenu.style.display = 'flex';
-            dropdownToogle.style.display = 'none';
-            logoContainer.style.display = 'none';
-
-        }
-        else
-        {
-            dropdownMenu.style.display = 'none'
-        }
-
+        dropdownMenu.classList.toggle('display-drop-down-menu')
+        dropdownToogle.classList.toggle('display-dropdown-toggle-and-logo')
+        logoContainer.classList.toggle('display-dropdown-toggle-and-logo')
     });
 
-    dropdownToogleClose.addEventListener("click", e => {
-        e.preventDefault();
+    dropdownToogleClose.addEventListener("click", () => {
 
-        if(clickCounter % 2 === 1)
-        {
-            dropdownMenu.style.display = 'none';
-            dropdownToogle.style.display = 'flex';
-            logoContainer.style.display = 'flex';
-        }
-        clickCounter++;
+        dropdownMenu.classList.toggle('display-drop-down-menu')
+        dropdownToogle.classList.toggle('display-dropdown-toggle-and-logo')
+        logoContainer.classList.toggle('display-dropdown-toggle-and-logo')
     });
     
 });

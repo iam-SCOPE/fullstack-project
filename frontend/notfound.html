@@ -406,44 +406,27 @@
         <script>
             document.addEventListener('DOMContentLoaded',
             function (){
-    
-                const dropdownToogle = document.querySelector('#dropdown-toogle');
-                const dropdownMenu = document.querySelector('#dropdown-menu');
-                const dropdownToogleClose = document.querySelector('#dropdown-toogleclose')
+                
+                const dropdownToogle = document.querySelector('.dropdown-toggle');
+                const dropdownMenu = document.querySelector('.dropdown-menu');
+                const dropdownToogleClose = document.querySelector('.dropdown-toggleclose')
                 const logoContainer = document.querySelector('.logo-container')
-
-                let clickCounter = 0;
-
-                dropdownToogle.addEventListener("click", e => {
-                    e.preventDefault();
-
-                    clickCounter++;
-
-                    if(clickCounter % 2 === 1)
-                    {
-                        dropdownMenu.style.display = 'flex';
-                        dropdownToogle.style.display = 'none';
-                        logoContainer.style.display = 'none';
-                    }
-                    else
-                    {
-                        dropdownMenu.style.display = 'none'
-                    }
-
+            
+            
+                dropdownToogle.addEventListener("click", () => {
+            
+                    dropdownMenu.classList.toggle('display-drop-down-menu')
+                    dropdownToogle.classList.toggle('display-dropdown-toggle-and-logo')
+                    logoContainer.classList.toggle('display-dropdown-toggle-and-logo')
                 });
-
-                dropdownToogleClose.addEventListener("click", e => {
-                    e.preventDefault();
-
-                    if(clickCounter % 2 === 1)
-                    {
-                        dropdownMenu.style.display = 'none';
-                        dropdownToogle.style.display = 'flex';
-                        logoContainer.style.display = 'flex';
-                    }
-                    clickCounter++;
+            
+                dropdownToogleClose.addEventListener("click", () => {
+            
+                    dropdownMenu.classList.toggle('display-drop-down-menu')
+                    dropdownToogle.classList.toggle('display-dropdown-toggle-and-logo')
+                    logoContainer.classList.toggle('display-dropdown-toggle-and-logo')
                 });
-    
+                
             });
 
         </script>
@@ -455,9 +438,9 @@
         <nav id="firstsub-container">
 
             <div id="dropdowncontainer">
-                <a href="#dropdown-menu" id="dropdown-toogle"><button id="dropdown-Button">Menu</button></a>
-                <ul id="dropdown-menu">
-                    <a href="" id="dropdown-toogleclose"><button id="dropdownclose">Close</button></a>
+                <button class="dropdown-toggle">Menu</button>
+                <ul class="dropdown-menu">
+                    <button class="dropdown-toggleclose">Close</button>
                     <p>_________________________</p>
                     <li><a href="/">HOME</a></li>
                     <p>_________________________</p>

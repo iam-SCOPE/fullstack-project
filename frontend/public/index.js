@@ -1,46 +1,7 @@
-//const fs = require('fs');
-//const userForm = require('/Projects/Software Engineering/fullstack project/backend/userform');
 
 document.addEventListener('DOMContentLoaded',
 function (){
-
     //first-container
-
-    const dropdownToogle = document.querySelector('#dropdown-toogle');
-    const dropdownMenu = document.querySelector('#dropdown-menu');
-    const dropdownToogleClose = document.querySelector('#dropdown-toogleclose')
-    let clickCounter = 0;
-
-    dropdownToogle.addEventListener("click", e => {
-        e.preventDefault();
-
-        clickCounter++;
-
-        if(clickCounter % 2 === 1)
-        {
-            dropdownMenu.style.display = 'flex';
-            dropdownToogle.style.display = 'none';
-
-        }
-        else
-        {
-            dropdownMenu.style.display = 'none'
-        }
-
-    });
-
-    dropdownToogleClose.addEventListener("click", e => {
-        e.preventDefault();
-
-        if(clickCounter % 2 === 1)
-        {
-            dropdownMenu.style.display = 'none';
-            dropdownToogle.style.display = 'flex';
-
-        }
-        clickCounter++;
-    });
-
     const firstSmallContainer = document.getElementById('firstsmall-container')
     const firstSmallContainer2 = document.getElementById('firstsmall-container2')
     const firstSmallContainer3 = document.getElementById('firstsmall-container3')
@@ -48,14 +9,12 @@ function (){
     const loginForm = document.getElementById('login-form')
     const loginButton = document.getElementById('login-button')
 
-    personalLogin.addEventListener('click', e => {
-        e.preventDefault()
+    personalLogin.addEventListener('click', () => {
         firstSmallContainer.style.display = 'none'
         firstSmallContainer2.style.display = 'flex'
     })
 
-    loginButton.addEventListener('click', e => {
-        e.preventDefault()
+    loginButton.addEventListener('click', () => {
         firstSmallContainer.style.display = 'none'
         firstSmallContainer2.style.display = 'none'
         firstSmallContainer3.style.display = 'flex'
@@ -93,57 +52,5 @@ function (){
       });
     });
 
-
-    /*
-    const fullName = document.getElementById('inputone').value
-    const phoneNum = document.getElementById('inputtwo').value
-    const email = document.getElementById('inputthree').value
-    const form = document.getElementById('form')
-
-    function addUserInfo(fullName, phoneNum, email)
-    {
-        //Check if the email or phone number already exists in the userform file
-        fs.readFile('/Projects/Software Engineering/fullstack project/backend/userform.js','utf8', (err,data)=>{
-            
-            if(err)
-            {
-                throw err
-                console.log("error can't read file")
-            }
-
-            for (let i = 0; i < userForm.length; i++)
-            {
-                if (phoneNum === userForm[i].phone || email === userForm[i].email)
-                {
-                    alert("User already exists");
-                }
-            }
-        })
-
-        // If the email or phone number does not exist, create a new object with the user's information and append it to the userform array
-        fs.writeFile('/Projects/Software Engineering/fullstack project/backend/userform.js', (err,data) => {
-            
-            if (err)
-            {
-                throw err
-                console.log("error can't write to file")
-            }
-
-            let newUser = {
-                name: fullName,
-                phone: phoneNum,
-                email: email
-            };
-    
-            userForm.push(newUser);
-        });
-
-    }
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        addUserInfo()
-    })
-    */    
 });
   

@@ -7,14 +7,12 @@ body{
     background-color: lightgrey;
     height: auto;
     padding-bottom: 5px;
-    padding-top: 10px;
     width: 100vw;
     position: fixed;
     z-index: 1;
     display: flex;
     justify-content: center;
     padding-top: 15px;
-    position: fixed;
     font-size: 13px;
     font-family: sans-serif;
     font-weight: bold;
@@ -35,7 +33,7 @@ body{
     border: 1px solid black;
 }
 
-#firstsub-container a{
+#firstsub-containersub a{
     color: black;
     margin-right: 10px;
     text-decoration: none;
@@ -125,19 +123,18 @@ body{
         position: relative;
         display: block;
     }
-    #dropdown-toogle{
+    .dropdown-toggle{
         display: block;
-    }
-    #dropdown-toogle button{
         background-color: grey;
-        padding: 5px;
+        padding: 10px;
         border-radius: 5px;
         margin-top: 6px;
-        padding: 10px;
         border: 1px solid black;
+        margin-left: -5px;
+        margin-right: 10px;
     }
 
-    #dropdown-menu{
+    .dropdown-menu{
         position: relative;
         display: none;
         flex-direction: column;
@@ -145,20 +142,19 @@ body{
         width: 100vw;
         height: 100vh;
     }
-    #dropdown-menu li{
+    .dropdown-menu li{
         list-style: none;
     }
-    #dropdown-menu a{
+    .dropdown-menu a{
         color: white;
+        text-decoration: none;
     }
-    #dropdown-menu p{
+    .dropdown-menu p{
         color: rgb(90, 38, 38);
     }
 
-    #dropdown-toogleclose{
+    .dropdown-toggleclose{
         display: block;
-    }
-    #dropdown-toogleclose button{
         width: 100px;
         padding: 10px;
         background-color: grey;
@@ -166,5 +162,13 @@ body{
         font-size: 16px;
         border: 1px solid black;
         border-radius: 10px;
+    }
+
+    .display-drop-down-menu{
+        display: flex;
+    }
+
+    .display-dropdown-toggle-and-logo{
+        display: none;
     }
 }
