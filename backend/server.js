@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 5700;
+const port = 8080;
 
 const logger = (req, res, next) => {
     const today = new Date(); 
@@ -69,5 +69,4 @@ app.all('*', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server Listening on port ${port}`)
-    console.log(`Access Webapp on localhost:${port} `)
 })
