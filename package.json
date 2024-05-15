@@ -1,0 +1,14 @@
+{
+  "name": "scope-technologies",
+  "version": "1.0.0",
+  "description": "A fullstack web application project built using HTML, CSS, Javascript, and Express.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && npm start",
+    "build": "cd backend && npm install"
+  },
+  "keywords": [],
+  "author": "Richard Olajuwon",
+  "license": "ISC"
+}
