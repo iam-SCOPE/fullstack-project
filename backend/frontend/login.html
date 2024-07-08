@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.freepnglogos.com/uploads/s-letter-logo-png-19.png">
+    <link rel="stylesheet" href="login.css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="login-container">
+        <form action="" class="login-form">
+            <p class="login-form-message"></p>
+            <label for="username" class="username-label">Email</label>
+            <input id="username" type="email" placeholder="Enter Your Email" required>
+            <label for="password" class="password-label">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" required>
+            <button class="login-button" type="submit">Log In</button>
+            <p>Don't have an account yet? <a href="/signup" class="login-anchor-tag">Sign Up</a></p>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', 
+        function(){
+            const form = document.querySelector('.login-form');
+            const formMessage = document.querySelector('.login-form-message');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault()
+                const username  = document.getElementById('username').value;
+                const password  = document.getElementById('password').value;
+                const data = {username, password}
+                fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'Application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then((response) => {
+                    if (response.redirected) {
+                        window.location.href = response.url;
+                    }
+                    if(!response.ok){
+                        // HTTP error (e.g., 400, 404, 500)
+                        return response.json().then(errorData => {
+                            throw new Error(errorData.message);
+                        });
+                    }
+                })
+                .catch((error) => {
+                    console.log(error)
+                    formMessage.textContent = 'Invalid Email or Password';
+                    setTimeout(() => {formMessage.textContent = ''}, 5000);
+                })
+            })
+        })
+    </script>
+</body>
+</html>

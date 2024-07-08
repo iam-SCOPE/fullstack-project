@@ -1,71 +1,58 @@
 const express = require('express');
+const session = require('express-session');
+const handlebars = require('express-handlebars');
 const path = require('path');
+let passport = require('passport');
+let routes = require('./routes');
+const MongoStore = require('connect-mongo');
 const app = express();
+require('dotenv').config(); //Require variables in the .env file
 const port = process.env.PORT || 5000;
 
-const logger = (req, res, next) => {
-    const today = new Date(); 
-    const day= today.getDate(); 
-    const month = today.getMonth() + 1; 
-    const year = today.getFullYear();
-    console.log(day, '/', month, '/', year);
-    console.log(req.method, req.url)
+// Configure Handlebars
+const hbs = handlebars.create({
+    layoutsDir: path.join(__dirname, 'views', 'layouts'),
+    extname: 'hbs',
+    defaultLayout: 'index',
+    partialsDir: path.join(__dirname, 'views', 'partials'),
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true,
+        allowProtoMethodsByDefault: true,
+    }
+});
+
+app.use(express.static('public'));//Load static files
+app.set('view engine', 'hbs');
+app.engine('hbs', hbs.engine);
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+//    SESSION SETUP
+const sessionStore = MongoStore.create({ mongoUrl: process.env.DB_AUTH, collection: 'sessions' });
+
+app.use(session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: true,
+    store: sessionStore,
+    cookie: {
+        maxAge: 1000 * 60 * 60 * 24 * 7 // Equals 7 days
+    }
+}));
+
+// Need to require the entire Passport config module so server.js knows about it
+require('./config/passport');
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Middleware to make user data available in all views
+app.use((req, res, next) => {
+    res.locals.user = req.user || null;
     next();
-}
+});
 
-app.use(logger)
-app.use(express.static('../frontend'))
-
-
-//Home page
-app.get(['/','/home'], (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/index.html'))
-    console.log('User is on Homepage')
-})
-
-//Signup page
-app.get(['/signup', '/sign-up'], (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/signup.html'))
-    console.log('User is on Signup page')
-})
-
-//Login page
-app.get(['/login', '/log-in'], (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/login.html'))
-    console.log('User is on Login page')
-})
-
-//About page
-app.get(['/about','/about-us'], (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/about.html'))
-    console.log('User is on the About page')
-})
-
-//Personal page
-app.get('/personal', (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/personal.html'))
-    console.log('User is on the Personal page')
-})
-
-//Corporate page
-app.get('/corporate', (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/corporate.html'))
-    console.log('User is on the Corporate page')
-})
-
-//Help page
-app.get('/help', (req, res) => {
-    res.status(200).sendFile(path.resolve('../frontend/help.html'))
-    console.log('User is on the help page')
-})
-
-//Notfound page
-app.all('*', (req, res) => {
-    res.status(404).sendFile(path.resolve('../frontend/notfound.html'))
-    console.log('User is trying to access an invalid resource')
-})
-
-
+app.use(routes)
 
 app.listen(port, () => {
     console.log(`Server Listening on port ${port}`)

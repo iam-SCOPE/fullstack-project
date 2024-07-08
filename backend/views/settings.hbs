@@ -1,0 +1,51 @@
+{{#if user}}
+<div class="settings-body">
+    <div class="user-info-table">
+        <p class="settings-p">Update your Information</p>
+       
+        <form action="" class="user-info-update-form">
+            <label class="form-label" for="firstname">First Name</label>
+            <br>
+            <input id="firstname" type="text" value={{user.firstname}}>
+            <br>
+            <label class="form-label" for="lastname">Last Name</label>
+            <br>
+            <input id="lastname" type="text" value={{user.lastname}}>
+            <br>
+            <label class="form-label" for="email">Email</label>
+            <br>
+            <input id="email" type="email" value={{user.username}}>
+            <br>
+            <button class="user-info-update-form-button">Update</button>
+        </form>
+
+        <form action="" class="password-update-form">
+            <p class="settings-p">Change Password</p>
+            <label class="form-label" for="currentpassword">Current Password</label>
+            <br>
+            <input id="currentpassword" type="password" placeholder="Enter current password">
+            <br>
+            <label class="form-label" for="newpassword">New Password</label>
+            <br>
+            <input id="newpassword" type="password" placeholder="Enter new Password">
+            <br>
+            <label class="form-label" for="newpasswordconfirmation">Confirm New Password</label>
+            <br>
+            <input id="newpasswordconfirmation" type="password" placeholder="Enter new password again">
+            <br>
+            <button class="password-update-form-button" >Update Password</button>
+        </form>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPassword = document.getElementById('currentpassword').value;
+            const newPassword = document.getElementById('newpassword').value;
+            const newPasswordConfirmation = document.getElementById('newpasswordconfirmation').value;
+            const passwordUpdateFormButton = document.querySelector('.password-update-form-button');
+
+        });
+    </script>
+</div>
+{{/if}}

@@ -6,7 +6,7 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: rgb(58, 56, 56);
+    background-color: rgb(17, 16, 16);
     height: 100vh;
     align-items: center;
     overflow-x: hidden;
@@ -25,9 +25,16 @@ body{
     display: flex;
     flex-direction: column;
     width: 450px;
-    background-color: rgb(176, 39, 39);
+    background-color: rgb(138, 134, 134);
     padding: 20px;
     border-radius: 10px;
+}
+
+.login-form-message{
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    margin-bottom: 20px;
 }
 
 .username-label, 
@@ -48,7 +55,7 @@ body{
     width: 50%;
     height: 30px;
     font-size: 20px;
-    background-color: red;
+    background-color: rgb(32, 190, 32);
     border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 20px;

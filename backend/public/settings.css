@@ -1,0 +1,61 @@
+/*Windows first approach*/
+
+.settings-body{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.user-info-table{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 20px 20px 30px 20px;
+}
+
+.settings-p{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-label{
+    font-size: 1.2rem;
+}
+
+#firstname,
+#lastname,
+#email,
+#currentpassword,
+#newpassword,
+#newpasswordconfirmation{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+.user-info-update-form-button{
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(6, 145, 6);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.password-update-form-button{
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(176, 183, 176);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.user-info-update-form-button:hover,
+.password-update-form-button:hover{
+    background-color: rgb(18, 89, 18);
+}
